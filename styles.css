@@ -18,3 +18,11 @@
 button {
   border-radius: 8px;
 }
+
+.green-button:hover {
+  cursor: pointer;
+  background-color: rgba(7, 97, 20, 0.594);
+}
+.green-button {
+  background-color: green;
+}

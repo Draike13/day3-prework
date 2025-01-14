@@ -7,3 +7,7 @@ function add() {
 function check() {
   console.log(count);
 }
+function final() {
+  alert(count);
+  return (count = 0);
+}
