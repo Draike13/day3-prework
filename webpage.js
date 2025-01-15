@@ -9,5 +9,6 @@ function check() {
 }
 function final() {
   alert(count);
-  return (count = 0);
+  //   return (count = 0);
+  location.reload();
 }
