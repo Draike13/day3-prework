@@ -8,6 +8,11 @@
     <script src="webpage.js"></script>
   </head>
   <body>
+    <div class="header">
+      <p class="header-text">Instructions and difficulty selector!</p>
+      <button class="try-button" onclick="openModal()">Try Me</button>
+    </div>
+
     <p>
       click here to
       <button onclick="add()" class="red-button">Add 1</button>
@@ -20,26 +25,23 @@
       Show the
       <button onclick="final()" class="green-button">Final Count</button>
     </p>
-    <form onsubmit="getNumber();isChecked();return false">
-      <input type="radio" id="easy" name="difficulty" checked />
-      <label for="easy">Easy</label><br />
-      <input type="radio" id="medium" name="difficulty" />
-      <label for="medium">Medium</label><br />
-      <input type="radio" id="hard" name="difficulty" />
-      <label for="hard">Hard</label><br /><br />
-      <label for="number">enter a number</label>
-      <input type="number" id="number" name="number" />
-      <input type="submit" />
-    </form>
 
     <!-- this is my modal  -->
     <div id="modal" class="modal">
       <div class="modal-content">
         <span onclick="closeModal()" class="close">&times;</span>
-        <p>This is the instructions to the game</p>
+        <form onsubmit="getNumber();isChecked();closeModal();return false">
+          <input type="radio" id="easy" name="difficulty" checked />
+          <label for="easy">Easy</label><br />
+          <input type="radio" id="medium" name="difficulty" />
+          <label for="medium">Medium</label><br />
+          <input type="radio" id="hard" name="difficulty" />
+          <label for="hard">Hard</label><br /><br />
+          <label for="number">enter a number</label>
+          <input type="number" id="number" name="number" />
+          <input class="btn" type="submit" />
+        </form>
       </div>
-      <button>start</button>
     </div>
-    <button onclick="openModal()" class="display">show modal</button>
   </body>
 </html>

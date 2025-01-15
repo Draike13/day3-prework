@@ -1,6 +1,5 @@
 let count = 0;
 let selectedDifficulty;
-// let modal = document.getElementById('modal');
 
 function add() {
   count += 1;
