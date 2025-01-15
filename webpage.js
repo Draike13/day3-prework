@@ -8,7 +8,7 @@ function check() {
   console.log(count);
 }
 function final() {
-  alert(count);
+  alert(`The final count is ${count} \n Goodbye`);
   //   return (count = 0);
   location.reload();
 }
