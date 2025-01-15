@@ -20,7 +20,13 @@
       Show the
       <button onclick="final()" class="green-button">Final Count</button>
     </p>
-    <form onsubmit="getNumber();return false">
+    <form onsubmit="getNumber();isChecked();return false">
+      <input type="radio" id="easy" name="difficulty" checked />
+      <label for="easy">Easy</label><br />
+      <input type="radio" id="medium" name="difficulty" />
+      <label for="medium">Medium</label><br />
+      <input type="radio" id="hard" name="difficulty" />
+      <label for="hard">Hard</label><br /><br />
       <label for="number">enter a number</label>
       <input type="number" id="number" name="number" />
       <input type="submit" />
