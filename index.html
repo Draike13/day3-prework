@@ -34,7 +34,10 @@
 
     <!-- this is my modal  -->
     <div id="modal" class="modal">
-      <div class="info">This is the instructions to the game</div>
+      <div class="modal-content">
+        <span onclick="closeModal()" class="close">&times;</span>
+        <p>This is the instructions to the game</p>
+      </div>
       <button>start</button>
     </div>
     <button onclick="openModal()" class="display">show modal</button>

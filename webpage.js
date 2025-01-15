@@ -41,5 +41,15 @@ function isChecked() {
 //modal functions
 
 function openModal() {
-  document.getElementById('modal').classList.remove('modal');
+  modal.style.display = 'block';
+}
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+};
+
+function closeModal() {
+  modal.style.display = 'none';
 }
