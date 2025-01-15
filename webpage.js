@@ -1,6 +1,7 @@
 let count = 0;
 let selectedDifficulty;
 
+//basic button functions
 function add() {
   count += 1;
 }
@@ -51,4 +52,18 @@ window.onclick = function (event) {
 
 function closeModal() {
   modal.style.display = 'none';
+}
+//random number generator function
+
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
+
+
+//timer function
+
+function startTimer() {
+  setTimeout(//open modal for answer
+    
 }
