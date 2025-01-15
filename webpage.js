@@ -14,6 +14,5 @@ function final() {
 }
 function getNumber() {
   let num = document.getElementById('number').value;
-  return (count = num);
-  console.log(num);
+  return (count = 0 + Number(num));
 }
