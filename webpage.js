@@ -1,5 +1,6 @@
 let count = 0;
 let selectedDifficulty;
+// let modal = document.getElementById('modal');
 
 function add() {
   count += 1;
@@ -35,4 +36,10 @@ function isChecked() {
     difficultyCheck = 'H';
   }
   return (selectedDifficulty = difficultyCheck);
+}
+
+//modal functions
+
+function openModal() {
+  document.getElementById('modal').classList.remove('modal');
 }

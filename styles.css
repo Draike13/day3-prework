@@ -26,3 +26,12 @@ button {
 .green-button {
   background-color: green;
 }
+
+/* modal styles */
+.modal {
+  display: none;
+}
+
+.open {
+  display: block;
+}
