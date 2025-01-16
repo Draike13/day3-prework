@@ -1,6 +1,5 @@
 let count = 0;
-let selectedDifficulty;
-
+let difficultyCheck;
 //basic button functions
 function add() {
   count += 1;
@@ -21,21 +20,20 @@ function getNumber() {
   return (count = 0 + Number(num));
 }
 
+function checkDifficulty() {
+  console.log(difficultyCheck);
+}
+
 // checks to see which radio is selected for difficulty
 // saves selection to difficulty variable
 function isChecked() {
-  let difficultyCheck;
   if (document.getElementById('easy').checked === true) {
-    console.log('easy');
-    difficultyCheck = 'E';
+    return (difficultyCheck = getRandomNumber(5, 10));
   } else if (document.getElementById('medium').checked === true) {
-    console.log('medium');
-    difficultyCheck = 'M';
+    return (difficultyCheck = getRandomNumber(3, 15));
   } else if (document.getElementById('hard').checked === true) {
-    console.log('hard');
-    difficultyCheck = 'H';
+    return (difficultyCheck = getRandomNumber(1, 25));
   }
-  return (selectedDifficulty = difficultyCheck);
 }
 
 //modal functions
@@ -56,14 +54,13 @@ function closeModal() {
 //random number generator function
 
 function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
-
-//timer function
+//timer function for how long the game runs
 
 function startTimer() {
-  setTimeout(//open modal for answer
-    
+  setTimeout(() => {
+    console.log(count);
+  }, difficultyCheck * 1000);
 }

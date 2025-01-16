@@ -44,6 +44,9 @@ body {
 .green-button {
   background-color: green;
 }
+.blue-button {
+  background-color: blue;
+}
 
 button {
   border-radius: 8px;
@@ -60,6 +63,9 @@ button:hover {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
@@ -71,6 +77,10 @@ button:hover {
 }
 
 .modal-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
@@ -78,8 +88,18 @@ button:hover {
   border-radius: 1rem;
   width: 60%; /* Could be more or less, depending on screen size */
 }
+.model-content-left {
+  min-width: 25rem;
+  order: 1;
+}
+.model-content-right {
+  display: flexbox;
+  order: 2;
+  margin-left: 1rem;
+}
 
 .close {
+  order: 4;
   color: #aaa;
   float: right;
   font-size: 28px;
